@@ -96,7 +96,7 @@
                 nextId++;
             }
 
-            self.addNode({id: nextId, name: '', parent: parentId});
+            self.addNode({id: nextId, name: 'Some Node', parent: parentId});
         }
 
         this.addNode = function(data){
@@ -214,7 +214,7 @@
             var nameString = '',
                 descString = '';
             if(typeof data.name !== 'undefined'){
-                nameString = '<h2>'+self.data.name+'</h2>';
+                nameString = '<h2><strong>'+self.data.name+'</strong></h2>';
             }
             if(typeof data.description !== 'undefined'){
                 descString = '<p>'+self.data.description+'</p>';
